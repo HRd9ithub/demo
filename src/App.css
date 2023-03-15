@@ -1,38 +1,197 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+/*----------------------- login register page style------------------------- */
+.main-box {
+  box-shadow: 0px 0px 5px #aaaa;
+  border-radius: 6px;
+  margin: 3rem auto;
+}
+
+img.slide-image {
+  width: 450px;
+  height: 570px;
+}
+
+.error {
+  font-size: 1.1rem !important;
+  color: red !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* ---------------------------header page style ------------------------------ */
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  color: #2347d9 !important;
+}
+
+/* -------------------------------home page ---------------------------------- */
+.main_section {
+  box-shadow: 0px 0px 10px #aaa;
+  border-radius: 5px;
+  padding: 33px;
+}
+
+/* ----------------------hotel detail table------------ */
+.hotel_detail h4 {
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 40px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.hotel_detail table tbody tr th {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ----------------------hotel detail  edit form ---------------- */
+
+.hotel_detail button {
+  padding: 8px 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* --------------------------room type table----------------------------- */
+.room_type table thead {
+  background: #fe4d5a;
+  color: #fff;
+  text-align: center;
+  /* font-size: 1.2rem; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.room_type table tbody {
+  text-align: center;
+}
+
+.room_type h4 {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+/* --------------------------room facility add form----------------------------- */
+.add_facility h4 {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-transform: capitalize;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.add_facility button {
+  padding: 7px 31px;
+}
+
+/* --------------------------room facility table----------------------------- */
+
+.facilities_dropdown .dropdown-toggle::after {
+  display: none !important;
+}
+
+.facilities_dropdown .dropdown-menu.show {
+  transform: translate(-70.6667px, -8px) !important;
+}
+
+.room_facility {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
+  margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.room_facility button {
+  background: #fe4d5a;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 7px;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* -----------------------------------------room add new form-------------------------------- */
+.facility-checkbox {
+  display: flex;
+  gap: 6rem;
+}
+
+
+/* -------------------------------------rooms view page-------------------------- */
+
+.card{
+  flex-direction: row !important;
+  margin-bottom: 3rem;
+}
+.facility_div button {
+  padding: 19rem,5rem;
+  padding: 0rem 1.3rem;
+  margin-right: 1rem;
+  border: 2px solid;
+  border-radius: 6px;
+}
+
+.total-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.total-div button {
+    padding: 19rem,5rem;
+    padding: 0.4rem 1.3rem;
+    margin-right: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #fe4d5a;
+    border-radius: 11px;
+}
+
+img.card-img-top {
+  height: -webkit-fill-available;
+}
+
+/* -----------------forget password page---------------------------- */
+
+img.mx-auto.slide-password-image {
+  width: 31rem;
+}
+
+
+/* -------------------------------booking page style----------------------- */
+
+thead.booking-head {
+  background-color: #fe4d5a;
+  color: #ffff;
+}
+
+button.booking-cancel {
+  background: #fe4d5a;
+  color: #ffff;
+  border: none;
+  outline: none;
+  width: 5rem;
+  height: 2.4rem;
+  border-radius: 9px;
+  cursor: pointer;
 }
